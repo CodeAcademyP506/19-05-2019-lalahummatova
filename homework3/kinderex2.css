@@ -1,0 +1,435 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+justify-content: space-between;
+}
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  padding-bottom: 40px;
+    position: fixed;
+   background: white;
+   z-index: 10;
+}
+li a {color: black;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .3s ;
+    border-bottom: 3px hidden #60cd96;
+    padding: 14px 16px;
+}
+li a:hover { color:#60cd96;
+    border-bottom: 3px solid #60cd96;
+    
+}
+.logo img {
+   width: 212px;
+    height: 52.5px;
+   
+}
+
+.perfect img{
+    width:100%;
+    height: 900px;
+}
+.perfect{
+    width: 100%;
+    height: 900px;
+   
+}
+/* slider sec*/
+
+.slider {
+ position:relative;
+ overflow: hidden;
+
+
+
+}
+.center { 
+      position: absolute;
+    z-index:1;
+    top: 100%;
+    left: 15%;
+    animation-name: Center;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+  
+  }
+  @keyframes Center {
+    0%{top:100%}
+    100% {
+    top: 50%;opacity: 1;
+    }
+
+  }
+  .center h1 {
+      font-size: 60px;
+     
+  }
+.LearnMore {
+font-size: 16px;
+border: 0 solid;
+border-radius: 40px;
+font-weight: 700;
+width: 40%;
+height: 50px;
+color: white;
+background: #60cd96;
+transition: 0.5s;
+  }
+   .LearnMore:hover {
+      background: #fd7e14;
+  }
+  /* slider sec*/
+
+
+  /* four elements */
+  .fourElements {
+    width: 100%;
+}
+.education {
+    width: 25%;
+    display: inline-block;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    text-align: justify;
+    color: white;
+    padding-top: 100px;
+}
+.education h3 {
+    padding-left: 80px;
+}
+.education p {
+    padding-left: 70px;
+    padding-right: 40px;
+}
+.education:nth-child(1) {
+ background:#20c997;
+}
+.education:nth-child(2) {
+    background: #17a2b8;
+}
+.education:nth-child(3) {
+    background: #e46b46;
+}
+.education:nth-child(4) {
+    background: #7b59d0;
+}
+.education:nth-child(4) button {
+   background: #7b59d0; 
+   color: white;
+   border-radius: 20px;
+   width: 50%;
+   height: 50px;
+   border-color: white;
+}
+.education:nth-child(4) button:hover {
+    background: #28a745;
+}
+.education button {
+    margin-left: 50px;
+}
+/* sec name four elements */
+
+/* sec name offer */
+.offer {
+    width: 100%;
+}
+.paragraph {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.safety {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+/*.withcircle {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+}*/
+.infant {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+  
+    /* sec name offer*/
+
+#offer {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 123px 0px;
+    padding-left: 200px;
+    box-sizing: border-box;
+}
+#offer .boxes {
+    width: 33.3%;
+    margin: 0 auto;
+
+
+}
+#offer .circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    background:#e0fff0;
+    position: relative;
+    margin-left: 33%;
+    transform: translateX(-50%)
+}
+#offer i {
+    top: 10px;
+    left: 10px;
+    color: #17b87a;
+    position: absolute;
+    font-size: 40px;
+}
+.boxes:hover .mini-circle{
+    transform: translateY(-50px);
+
+
+} 
+#offer .text h3{
+    margin-left: 23%;
+}
+#offer .text p{
+    width: 70%;
+    text-align: center;
+}
+#offer .mini-circle {
+    width: 20px;
+    height: 20px;
+    background:#e0fff0;
+    position: absolute;
+    border-radius: 100%;
+    transition: .5s ease-in-out;
+    top: 43px;
+    left: -17px;
+}
+#offer .right{
+    top: 50px;
+    left: 60px;
+}
+
+
+
+
+/*sec name about us */
+.few {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    box-sizing: border-box;
+  
+
+}
+.few h1 {
+    font-size: 50px;
+}
+.few p {
+    width: 40%;
+ 
+}
+
+.imagep {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 100px 0px;
+
+}
+.yellow {
+    width: 20%;
+}
+.preschool {
+    width: 20%;
+    padding-right: 150px;
+  
+}
+.gradient {
+    height: 2px;
+    background-color:#868e96;
+    width: 100%;
+   
+}
+.left {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 2px;
+    background-image:linear-gradient(red,yellow);
+    width: 50%;
+
+}
+@keyframes example {
+    0% {
+        width:75%;
+        background-image: linear-gradient(red,yellow);
+
+    }
+    50% {
+        width:100;
+    background-color:#868e96;
+    
+    }
+}
+.grad2 {
+    padding-top: 50px;
+}
+
+.preschoolBtn{
+    
+        font-size: 16px;
+        border: 0 solid;
+        border-radius: 40px;
+        font-weight: 700;
+        width: 60%;
+        height: 50px;
+        color: white;
+        background: #60cd96;
+        margin-top: 70px;
+      
+     }
+          
+.preschool button:hover {
+              background: #fd7e14;
+             
+          }
+.yellow img {
+    padding-left: 150px;
+}
+ /* sec name about us */
+
+
+ .hello {
+     position: relative;
+     
+ }
+ .pink h2 {
+     position: absolute;
+     top: 50px;
+     left: 850px;
+     font-size: 40px;
+     color: white;
+ }
+ .pink img {
+     width: 100%;
+     height: 855.98px;
+    
+ }
+ .programs {
+     position: absolute;
+     z-index: 1;
+     left: 20%;
+     bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+  overflow: hidden;
+ }
+
+ .information {
+     width: 370px;
+     background: white;
+     padding: 30px;
+     margin: 30px;
+     margin-top: 0px;
+     margin-left: 0px;
+     box-sizing: border-box;
+ }
+ 
+ .picture img  {
+    width:100%;
+    height:100%;
+    transition: all 0.3s ease-in;
+ }
+ .program .picture {
+     width:370px;
+     height:275px;
+     box-sizing: border-box;
+     transition: all  .35s ease-in-out;
+     overflow: hidden !important;
+     
+     
+ }
+ .program{
+     width:400px;
+ }
+ .program:hover img {
+     transform: scale(1.1);
+     
+ }
+ .information h4 {
+     color: #28a745;
+ }
+
+
+  /* sec name testimonials */
+
+  .testimonials {
+      
+        display: flex;
+        justify-content: center;
+      }  
+      .art img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+      }
+
+.allart{
+    position: relative;
+    display:-webkit-box;
+    width:970px;
+    overflow:hidden;
+    margin-top:12px;
+    
+}
+
+.allart .art{
+    position: relative;
+    width:490px;
+    animation-name:Slider;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes Slider{
+    0%{left:0px}
+    99.999%{left:-485px}
+    100%{left:0px}
+}
